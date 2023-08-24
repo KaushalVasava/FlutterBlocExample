@@ -1,16 +1,24 @@
-# fluttor_app
+# Flutter Blor app
+It is a basic app where we can check internet connectivity using connectivity package and app designed using Bloc pattern.
 
-A new Flutter project.
+# Technologies used:
+- Dart
+- Flutter
+- Bloc pattern
+- connectivity package
+- bloc package
+- Snackbar
 
-## Getting Started
+# What is bloc?
+- How to manange states and events using bloc pattern using bloc provider, bloc state, bloc event, bloc consumer, bloc builder, bloc listener.
+- Bloc event for UI events. For example click to input, press button.
+- Bloc state for Different state of that events. For example connectivity event have two state Connected and Disconnected.
+- Bloc is manager for state and event where we can connect states and events and do operations.
+- Bloc builder is used for Updating UI based on state and event.
+- Block listner is used for do background tasks based on state and events.
+- Block consumer is used for Both. ie. Updating UI and background tasks.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+  Author: Kaushal Vasava.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
