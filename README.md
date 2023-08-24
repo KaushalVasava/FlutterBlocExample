@@ -14,7 +14,8 @@ It is a basic app where we can check internet connectivity using connectivity pa
 - Bloc event for UI events. For example click to input, press button.
 - Bloc state for Different state of that events. For example connectivity event have two state Connected and Disconnected.
 - Bloc is manager for state and event where we can connect states and events and do operations.
-- Bloc builder is used for Updating UI based on state and event.
+- Bloc provider is used for providing block to UI or screen.
+-  Bloc builder is used for Updating UI based on state and event.
 - Block listner is used for do background tasks based on state and events.
 - Block consumer is used for Both. ie. Updating UI and background tasks.
 
