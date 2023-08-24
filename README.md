@@ -16,8 +16,8 @@ It is a basic app where we can check internet connectivity using connectivity pa
 - Bloc is manager for state and event where we can connect states and events and do operations.
 - Bloc provider is used for providing block to UI or screen.
 - Bloc builder is used for Updating UI based on state and event.
-- Block listner is used for do background tasks based on state and events.
-- Block consumer is used for Both. ie. Updating UI and background tasks.
+- Bloc listner is used for do background tasks based on state and events.
+- Bloc consumer is used for Both. ie. Updating UI and background tasks.
 
 # What is Cubit? (Branch- cubit)
 - Cubit is a subset of the BLoC Pattern package that does not rely on events and instead uses methods to emit new states.
@@ -27,7 +27,19 @@ It is a basic app where we can check internet connectivity using connectivity pa
   - Cubit is a subset of Bloc. so, it reduces complexity. Cubit eliminates the event classes.
   - Cubit uses emit rather than yield to emit state. Since emit works synchronously, you can ensure that the state is updated in the next line.
 
-  
+# API or Network data handling using Bloc (Branch- api-handling)
+- Used repository structure for api and data handling
+- Used dio library for API calls
+- Used pretty_dio_logger library for logging response of api.
+- Used cached_network_image library to caching network images for faster re-load and show image in UI.
+- Bloc-Cubic pattern for App.
+- Used ListView for show data in the scrollable list.
+
+# Recording
+
+https://github.com/KaushalVasava/FlutterBlocExample/assets/49050597/ade13ecc-2b8d-4e8b-9c78-9e40321c5427
+
+
   Author: Kaushal Vasava.
 
 
