@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fluttor_app/blocs/internet_bloc/internet_bloc.dart';
-import 'package:fluttor_app/blocs/internet_bloc/internet_state.dart';
+import 'package:fluttor_app/cubit/internet_cubit/internet_cubit.dart';
+import 'package:fluttor_app/cubit/internet_cubit/internet_state.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,14 +18,14 @@ class HomeScreen extends StatelessWidget {
           //blockBuilder used for UI operation
           //blockListener used for background task like do so calculation, navigation etc
           //blockConsumer used for Both task UI and background
-          child: BlocConsumer<InternetBloc, InternetState>(
+          child: BlocConsumer<InternetCubit, InternetState>(
             listener: (context, state) {
-              if (state is GainedState) {
+              if (state == InternetState.gained) {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                   content: Text("Internet Connected"),
                   backgroundColor: Colors.green,
                 ));
-              } else if (state is LostState) {
+              } else if (state == InternetState.lost) {
                 ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
                   content: Text("Not Connected"),
                   backgroundColor: Colors.red,
@@ -33,9 +33,9 @@ class HomeScreen extends StatelessWidget {
               }
             },
             builder: (context, state) {
-              if (state is GainedState) {
+              if (state == InternetState.gained) {
                 return const Text("Connected");
-              } else if (state is LostState) {
+              } else if (state == InternetState.lost) {
                 return const Text("Not connected");
               } else {
                 return const Text("Loading...");
