@@ -27,7 +27,7 @@ It is a basic app where we can check internet connectivity using connectivity pa
   - Cubit is a subset of Bloc. so, it reduces complexity. Cubit eliminates the event classes.
   - Cubit uses emit rather than yield to emit state. Since emit works synchronously, you can ensure that the state is updated in the next line.
 
-# API or Network data handling using Bloc (Branch- api-handling)
+# API or Network data handling using Bloc (Branch- api-code)
 - Used repository structure for api and data handling
 - Used dio library for API calls
 - Used pretty_dio_logger library for logging response of api.
